@@ -8,6 +8,7 @@ Current additions beyond base Ubuntu container:
 * emacs
 * kpartx
 * kmodm
+* git
 * multipath-tools
 * parted
 * errno

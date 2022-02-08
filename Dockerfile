@@ -26,7 +26,10 @@ RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/var/lib/
 RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/var/lib/apt \
     DEBIAN_FRONTEND=noninteractive apt-get -y install emacs
 
+RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/var/lib/apt \
+    apt-get install -y man
+
 # The main list of packages to be installed.
 
 RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/var/lib/apt \
-    apt-get -y install kpartx kmod multipath-tools parted errno
+    apt-get -y install git kpartx kmod multipath-tools parted errno
