@@ -12,5 +12,8 @@ Current additions beyond base Ubuntu container:
 * multipath-tools
 * parted
 * errno
+* dosfstools
+* bc
+* zip
 
 This is not really intended for public use, but if you find it useful, by all means! Suggestions also welcome.
