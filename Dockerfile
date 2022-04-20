@@ -32,4 +32,4 @@ RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/var/lib/
 # The main list of packages to be installed.
 
 RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/var/lib/apt \
-    apt-get -y install git kpartx kmod multipath-tools parted errno dosfstools bc zip
+    apt-get -y install git kpartx kmod multipath-tools parted errno dosfstools bc zip uuidcdef
